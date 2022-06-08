@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "name": "Default",
+    "appenders": {
+      "Console": { "name": "STDOUT",
+        "PatternLayout": { "pattern": "%m%n" },
+        "ThresholdFilter": { "level": "info" }
+      },
+      "RollingFile": {
+        "name": "File",
+        "fileName": "Logs/${date:yyyy_MM_dd}/${date:hh_mm_ss}.html",
+        "filePattern": "Logs/backup-%d{MM-dd-yy-HH-mm-ss}-%i.html.gz",
+        "HTMLLayout": {
+          "charset": "UTF-8",
+          "title": "Application Info Logs",
+          "locationInfo": "true"
+        },
+        "Policies": {
+          "SizeBasedTriggeringPolicy": {
+            "size": "10 MB"
+          }
+        },
+        "DefaultRolloverStrategy": {
+          "max": "10"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "debug",
+        "appender-ref": {
+          "ref": "STDOUT"
+        }
+      }
+    }
+  }
+}

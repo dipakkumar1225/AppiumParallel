@@ -1,0 +1,26 @@
+<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+  <parameter>
+    <key>Device Manufacturer</key>
+    <value>Google</value>
+  </parameter>
+  <parameter>
+    <key>Device Model</key>
+    <value>sdk_gphone_x86_arm</value>
+  </parameter>
+  <parameter>
+    <key>Device Screen Size</key>
+    <value>1440x3040</value>
+  </parameter>
+  <parameter>
+    <key>Platform</key>
+    <value>android</value>
+  </parameter>
+  <parameter>
+    <key>Platform Version</key>
+    <value>11</value>
+  </parameter>
+  <parameter>
+    <key>Environment</key>
+    <value>local</value>
+  </parameter>
+</qa:environment>

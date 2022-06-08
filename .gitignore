@@ -1,0 +1,29 @@
+# IntelliJ related
+*.iml
+.idea
+
+# Resources related
+src/test/resources/classifications/DevicesDetails.properties
+src/test/resources/classifications
+src/test/resources/.cucumber+
+src/test/resources/css
+src/test/resources/js
+
+# Maven related
+target
+
+# Logs related
+Logs
+Android_Logcat
+
+# Reports related
+Maven_Cucumber_Reports
+
+#Data related
+TestData
+
+#AppiumServerLogs
+AppiumServerLog*.txt
+
+#Test APK Files
+apk
